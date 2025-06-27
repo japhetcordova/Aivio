@@ -34,7 +34,7 @@ export const DashboardNavbar = () => {
             </Button>
 
             <Button
-                className="h-9 w-[240px] justify-start font-normal text-muted-foreground haver:text-muted-foreground"
+                className="h-9 w-[240px] justify-start font-normal text-muted-foreground hover:text-muted-foreground"
                 variant={"outline"}
                 size="sm"
                 onClick={()=> setCommandOpen((open) => !open)}
