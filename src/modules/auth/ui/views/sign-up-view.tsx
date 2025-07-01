@@ -106,12 +106,8 @@ export const SignUpView = () => {
           <form onSubmit={form.handleSubmit(onSubmit)} className="p-6 md: p-5">
             <div className="flex flex-col gap-6">
               <div className="flex flex-col items-center text-center">
-                <h1 className="text-2xl font-bold">
-                  Let&apos;s get started
-                </h1>
-                <p className="text-muted-foreground text-balance">
-                  Create your account
-                </p>
+                  <h1 className="text-2xl font-bold tracking-tight">Welcome to the future</h1>
+                  <p className="text-muted-foreground text-balance">Create your Meet.AI account</p>
               </div>
               <div className="grid gap-3">
                 <FormField
@@ -241,11 +237,10 @@ export const SignUpView = () => {
         </Form>
 
 
-        <div className="bg-radial from-sidebar-accent to-sidebar relative hidden md:flex flex-col gap-y-4 items-center justify-center">
-          <img src="logo.svg" alt="Image" className="h-[92px] w-[92px]"/>
-          <p className="text-2xl font-semibold text-white">
-            Meet.AI
-          </p>
+        <div className="bg-radial from-sidebar-accent to-sidebar relative hidden md:flex flex-col gap-y-2 items-center justify-center">
+          <img src="logo.svg" alt="Image" className="h-[92px] w-[92px] animate-pulse rotate-45"/>
+          <p className="text-2xl text-muted font-bold">Meet.AI</p>
+          <p className="text-sm font-light text-muted/60 ">Built for the new era of intelligence</p>
         </div>
       </CardContent>
     </Card>
