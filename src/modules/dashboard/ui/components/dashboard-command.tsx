@@ -1,6 +1,6 @@
 "use client";
 import { Dispatch, SetStateAction } from "react";
-import { CommandDialog, CommandInput, CommandList, CommandItem } from "@/components/ui/command";
+import { ResponsiveCommandDialog, CommandInput, CommandList, CommandItem } from "@/components/ui/command";
 
 interface Props{
     open: boolean;
@@ -9,7 +9,7 @@ interface Props{
 
 export const DashboardCommand = ({open, setOpen}:Props) =>{
     return(
-        <CommandDialog open={open} onOpenChange={setOpen}>
+        <ResponsiveCommandDialog open={open} onOpenChange={setOpen}>
             <CommandInput
                 placeholder="Find a meeting for agent"
             />
@@ -17,7 +17,10 @@ export const DashboardCommand = ({open, setOpen}:Props) =>{
                 <CommandItem>
                     Test
                 </CommandItem>
+                <CommandItem>
+                    Test-2
+                </CommandItem>
             </CommandList>
-        </CommandDialog>
+        </ResponsiveCommandDialog>
     );
 };

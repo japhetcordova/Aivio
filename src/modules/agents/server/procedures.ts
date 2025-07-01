@@ -2,7 +2,7 @@ import { createTRPCRouter, baseProcedure } from "@/trpc/init";
 import { db } from "@/db";
 import { agents } from "@/db/schema";
 //import { setTimeout } from "timers/promises";
-import { TRPCError } from "@trpc/server";
+//import { TRPCError } from "@trpc/server";
 
 export const agentsRouter = createTRPCRouter({
 
@@ -12,7 +12,7 @@ export const agentsRouter = createTRPCRouter({
             .from(agents);
 
             //await setTimeout(5000); // Simulate a delay for testing purposes
-            throw new TRPCError({code: "BAD_REQUEST"});
+            //throw new TRPCError({code: "BAD_REQUEST"});
 
         return data;
     }),
