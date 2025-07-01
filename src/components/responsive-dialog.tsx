@@ -40,8 +40,9 @@ export const ResponsiveDialog = ({
                 <DrawerContent>
                     <DrawerHeader>
                         <DrawerTitle>{title}</DrawerTitle>
+                        <DrawerDescription>{description}</DrawerDescription>
                     </DrawerHeader>
-                    <DrawerDescription>{description}</DrawerDescription>
+                    
                     <div>
                         {children}
                     </div>
@@ -55,8 +56,9 @@ export const ResponsiveDialog = ({
             <DialogContent>
                 <DialogHeader>
                     <DialogTitle>{title}</DialogTitle>
+                    <DialogDescription>{description}</DialogDescription>
                 </DialogHeader>
-                <DialogDescription>{description}</DialogDescription>
+                
                 {children}
             </DialogContent>
         </Dialog>
