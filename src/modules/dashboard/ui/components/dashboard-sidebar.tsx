@@ -81,7 +81,7 @@ import {
                                         pathname === item.href && "bg-linear-to-r/oklch border border-[#5D6B68]/10"
                                     )}
                                     isActive={pathname === item.href}>
-                                        <Link href="{item.href}">
+                                        <Link href={item.href}>
                                             <item.icon />
                                             <span>
                                                 {item.label}
@@ -114,7 +114,7 @@ import {
                                     pathname === item.href && "bg-linear-to-r/oklch border border-[#5D6B68]/10"
                                 )}
                                 isActive={pathname === item.href}>
-                                    <Link href="{item.href}">
+                                    <Link href={item.href}>
                                         <item.icon />
                                         <span>
                                             {item.label}
