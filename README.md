@@ -2,7 +2,7 @@ It is a [Next.js](https://nextjs.org) project courses bootstrapped with [`create
 
 ## Getting Started
 
-First, run the development server:
+First of all, run the development server:
 
 ```bash
 npm run dev
